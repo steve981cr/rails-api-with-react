@@ -4,7 +4,7 @@ import { get, patch } from 'axios';
 class ArticleEdit extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = { title: '', content: ''};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleCancel = this.handleCancel.bind(this);

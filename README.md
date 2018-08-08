@@ -15,3 +15,7 @@ To run this app locally first start the Rails server on port 3001: rails server 
 Then run the Node server to start React: yarn --cwd client start
 
 The app will launch on port 3000.
+
+If you have the foreman gem installed you can run both servers with one command:
+
+foreman start -f Procfile.dev
