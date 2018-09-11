@@ -2,13 +2,15 @@
 
 This application goes along with the Build a Rails API with React Tutorial. Instructions on building this app are in two parts:
 
-Building the Rails API: http://www.techandstartup.org/tutorials/rails-api
+Building the Rails API: https://www.techandstartup.com/tutorials/rails-api
 
-Building the React front end: http://www.techandstartup.org/tutorials/react-crud-app
+Building the React front end: https://www.techandstartup.com/tutorials/react-crud-app
 
-This is a Rails API only application.
+This app conists of two parts:
 
-The React app is in the client directory.
+1) The Ruby on Rails API-only back end application.
+
+2) The React front end app, which is in the client directory.
 
 To run this app locally first start the Rails server on port 3001: rails server -p 3001
 
