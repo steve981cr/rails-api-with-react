@@ -10,7 +10,7 @@ class ArticleInfo extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:3001/articles/${this.props.match.params.id}.json`)
+    axios.get(`http://localhost:3001/api/articles/${this.props.match.params.id}.json`)
       .then((response) => { 
         this.setState({
           article: response.data
@@ -20,7 +20,7 @@ class ArticleInfo extends Component {
   }
 
   handleDelete() {
-    axios.delete(`http://localhost:3001/articles/${this.props.match.params.id}.json`)
+    axios.delete(`http://localhost:3001/api/articles/${this.props.match.params.id}.json`)
       .then(() => {
         this.props.history.push("/articles")
       })

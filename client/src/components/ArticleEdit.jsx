@@ -11,7 +11,7 @@ class ArticleEdit extends React.Component {
   }
 
   componentDidMount() {
-    get(`http://localhost:3001/articles/${this.props.match.params.id}.json`)
+    get(`http://localhost:3001/api/articles/${this.props.match.params.id}.json`)
       .then((response) => {
         this.setState(response.data);
       })
@@ -20,7 +20,7 @@ class ArticleEdit extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    patch(`http://localhost:3001/articles/${this.state.id}.json`, this.state)
+    patch(`http://localhost:3001/api/articles/${this.state.id}.json`, this.state)
       .then(() => {
         this.props.history.push(`/articles/${this.state.id}`);
       })

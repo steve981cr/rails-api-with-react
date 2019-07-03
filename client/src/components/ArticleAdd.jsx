@@ -12,7 +12,7 @@ class ArticleAdd extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    post('http://localhost:3001/articles.json', this.state)
+    post('http://localhost:3001/api/articles.json', this.state)
       .then((response) => {
         this.props.history.push(`/articles/${response.data.id}`);
       })

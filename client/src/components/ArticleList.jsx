@@ -10,7 +10,7 @@ class ArticleList extends Component {
   }
 
   componentDidMount() {
-    get('http://localhost:3001/articles.json')
+    get('http://localhost:3001/api/articles.json')
       .then(response => { 
         // console.log("this.state2", this.state);
         this.setState({articles: response.data});
